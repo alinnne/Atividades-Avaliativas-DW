@@ -16,6 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Nome: " . htmlspecialchars($nome) . "<br>";
             echo "Email: " . htmlspecialchars($email);
 
+            header("Location: obrigado.php");
+            exit();
+
            
         }
     }
